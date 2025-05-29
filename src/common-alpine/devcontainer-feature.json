@@ -1,7 +1,7 @@
 {
   "name": "Webry Alpine Base",
   "id": "common-alpine",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Includes base packages and settings for alpine projects (opinionated).",
   "options": {
     "git": {
