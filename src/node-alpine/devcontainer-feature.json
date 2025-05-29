@@ -1,0 +1,24 @@
+{
+  "name": "Node Alpine (opinionated)",
+  "id": "node-alpine",
+  "version": "1.0.1",
+  "description": "Installs @antfu/ni package",
+  "options": {
+    "niversion": {
+      "type": "string",
+      "default": "~0.4",
+      "enum": [
+        "latest",
+        "~0.4"
+      ]
+    },
+    "packman": {
+      "type": "string",
+      "default": "pnpm",
+      "enum": [
+        "npm",
+        "pnpm"
+      ]
+    }
+  }
+}

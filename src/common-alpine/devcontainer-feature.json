@@ -1,0 +1,62 @@
+{
+  "name": "Webry Alpine Base",
+  "id": "common-alpine",
+  "version": "1.0.1",
+  "description": "Includes base packages and settings for alpine projects (opinionated).",
+  "options": {
+    "git": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install git + openssh"
+    },
+    "bashrc": {
+      "type": "boolean",
+      "default": true,
+      "description": "Generate .bashrc"
+    },
+    "starship": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install and setup Starship"
+    }
+  },
+  "mounts": [
+    {
+      "source": "${localEnv:HOME}/.ssh",
+      "target": "/root/.ssh",
+      "type": "bind"
+    }
+  ],
+  "containerEnv": {
+    "SHELL": "/bin/bash"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscode-icons-team.vscode-icons",
+        "web-dev-sam.webry-purple-minimal"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash",
+            "icon": "terminal-bash"
+          }
+        },
+        "workbench.iconTheme": "vscode-icons",
+        "workbench.colorTheme": "Webry Blue Minimal"
+      },
+      "keybindings": [
+        {
+          "key": "alt+k",
+          "command": "workbench.explorer.openEditorsView.toggleVisibility"
+        },
+        {
+          "key": "alt+k",
+          "command": "workbench.action.toggleSidebarVisibility"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Test",
+      "command": "devcontainer features test --global-scenarios-only .",
+      "type": "shell",
+      "icon": {
+        "id": "beaker"
+      },
+      "options": {
+        "statusbar": {
+          "label": "",
+          "detail": "Test using the tests"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "test-features": {
+    "image": "mcr.microsoft.com/devcontainers/base:alpine",
+    "features": {
+      "common-alpine": {},
+      "node-alpine": {}
+    }
+  }
+}
