@@ -25,6 +25,20 @@ alias gl='git log --oneline --graph'
 eval "$(starship init bash)"
 EOF
 
+mkdir -p ~/.config
+cat > ~/.config/starship.toml << 'EOF'
+format = """$directory $git_branch"""
+add_newline = true
+
+[directory]
+disabled = false
+format = '[$path](bold purple)'
+
+[git_branch]
+disabled = false
+ignore_branches = ["main", "master"]
+EOF
+
 echo 'Done!'
 
 # These following environment variables are passed in by the dev container CLI.
