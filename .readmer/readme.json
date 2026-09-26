@@ -199,5 +199,6 @@
         "```"
       ]
     }
-  ]
+  ],
+  "why": "The same dev container setup, reusable across my repos instead of copy-pasted."
 }

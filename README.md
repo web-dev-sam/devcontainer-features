@@ -9,6 +9,9 @@ _Dev container features for dev environment. 📦_
 
 &nbsp;
 
+## Why does this exist?
+The same dev container setup, reusable across my repos instead of copy-pasted.
+
 ## About
 
 > This repo provides a starting point and example for creating your own custom [dev container Features](https://containers.dev/implementors/features/), hosted for free on GitHub Container Registry.  The example in this repository follows the [dev container Feature distribution specification](https://containers.dev/implementors/features-distribution/).  
